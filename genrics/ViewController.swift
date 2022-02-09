@@ -31,7 +31,14 @@ class ViewController: UIViewController {
         if let foundIndex = findIndex(of: "llama", in: strings) {
             print("The index of llama is \(foundIndex)")
         }
-        
+        print("==============>")
+        let doubleIndex = findIndex(of: 9.3, in: [3.14159, 0.1, 0.25])
+        print(doubleIndex as Any)
+        // doubleIndex is an optional Int with no value, because 9.3 isn't in the array
+        let stringIndex = findIndex(of: "Andrea", in: ["Mike", "Malcolm", "Andrea"])
+        // stringIndex is an optional Int containing a value of 2
+        print(stringIndex as Any)
+
     }
     func findIndex<T:Equatable>(of valueToFind: T, in array:[T]) -> Int? {
         for (index, value) in array.enumerated() {
