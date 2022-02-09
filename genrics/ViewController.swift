@@ -28,11 +28,20 @@ class ViewController: UIViewController {
         _ = stackOfStrings.pop()
         print(stackOfStrings)
         print("===================>")
-        if let foundIndex = findIndex(ofString: "llama", in: strings) {
+        if let foundIndex = findIndex(of: "llama", in: strings) {
             print("The index of llama is \(foundIndex)")
         }
         
     }
+    func findIndex<T:Equatable>(of valueToFind: T, in array:[T]) -> Int? {
+        for (index, value) in array.enumerated() {
+            if value == valueToFind {
+                return index
+            }
+        }
+        return nil
+    }
+
     
   /*  func swapTwoInts(_ a : inout Int, _ b: inout Int){
         let tempA = a
@@ -70,14 +79,14 @@ class ViewController: UIViewController {
     
     
   //  Type Constraints in Action without generic
-    func findIndex(ofString valueToFind: String, in array: [String]) -> Int? {
+   /* func findIndex(ofString valueToFind: String, in array: [String]) -> Int? {
         for (index, value) in array.enumerated() {
             if value == valueToFind {
                 return index
             }
         }
         return nil
-    }
+    }*/
 
 }
 
