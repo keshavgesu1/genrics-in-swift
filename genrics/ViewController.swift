@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     var someInt = 3
     var anotherInt = 107
     var stackOfStrings = Stack<String>()
+    let strings = ["cat", "dog", "llama", "parakeet", "terrapin"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,10 @@ class ViewController: UIViewController {
         stackOfStrings.push("cuatro")
         _ = stackOfStrings.pop()
         print(stackOfStrings)
+        print("===================>")
+        if let foundIndex = findIndex(ofString: "llama", in: strings) {
+            print("The index of llama is \(foundIndex)")
+        }
         
     }
     
@@ -57,6 +62,21 @@ class ViewController: UIViewController {
         mutating func pop() -> Element{
             items.removeLast()
         }
+    }
+   //MARK: - Type Constraints
+//    func someFunction<T: SomeClass, U: SomeProtocol>(someT: T, someU: U) {
+//        // function body goes here
+//    }
+    
+    
+  //  Type Constraints in Action without generic
+    func findIndex(ofString valueToFind: String, in array: [String]) -> Int? {
+        for (index, value) in array.enumerated() {
+            if value == valueToFind {
+                return index
+            }
+        }
+        return nil
     }
 
 }
