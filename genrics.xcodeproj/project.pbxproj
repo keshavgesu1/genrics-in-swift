@@ -13,6 +13,7 @@
 		569F79B727B3C402005E07E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569F79B527B3C402005E07E6 /* Main.storyboard */; };
 		569F79B927B3C405005E07E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569F79B827B3C405005E07E6 /* Assets.xcassets */; };
 		569F79BC27B3C405005E07E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569F79BA27B3C405005E07E6 /* LaunchScreen.storyboard */; };
+		569F79C427B3DFA4005E07E6 /* AssociatedTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569F79C327B3DFA4005E07E6 /* AssociatedTypeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		569F79B827B3C405005E07E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		569F79BB27B3C405005E07E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		569F79BD27B3C405005E07E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		569F79C327B3DFA4005E07E6 /* AssociatedTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedTypeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				569F79AF27B3C402005E07E6 /* AppDelegate.swift */,
 				569F79B127B3C402005E07E6 /* SceneDelegate.swift */,
 				569F79B327B3C402005E07E6 /* ViewController.swift */,
+				569F79C327B3DFA4005E07E6 /* AssociatedTypeViewController.swift */,
 				569F79B527B3C402005E07E6 /* Main.storyboard */,
 				569F79B827B3C405005E07E6 /* Assets.xcassets */,
 				569F79BA27B3C405005E07E6 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				569F79B427B3C402005E07E6 /* ViewController.swift in Sources */,
 				569F79B027B3C402005E07E6 /* AppDelegate.swift in Sources */,
+				569F79C427B3DFA4005E07E6 /* AssociatedTypeViewController.swift in Sources */,
 				569F79B227B3C402005E07E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
